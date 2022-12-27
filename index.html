@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador e Decodificador de textos</title>
+    <link rel="icon" type="image/png" href="./src/imagens/favicon.png" sizes="32x32" />
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+
+</head>
+
+<body>
+    <header class="container-01">
+        <div class="icon-logo">
+            <img src="./src/imagens/icons-logo-msg.png" alt="Icone de logo inicial">
+        </div>
+    </header>
+
+    <main>
+        <form>
+            <div class="contaneir-02">
+
+                <div class="encrypt">
+                    <label for="texto"></label>
+                    <textarea name="texto" id="texto" placeholder="Digite seu texto_" required></textarea>
+                </div>
+
+                <div>
+                    <p class="msg-aviso" title="Atenção as orientações de alertas de entrada de textos!">
+                        <img class="img-alert" src="./src/imagens/exclamation_alert.png"
+                            alt="alerta de entrada de textos">
+                        Apenas letras minúsculas e sem acento.
+                    </p>
+                </div>
+
+                <div class="buttons">
+                    <button class="botao-1" type="button" id="criptografar" onclick="criptografarTexto()">
+                        <img class="img-locked" src="./src/imagens/locked.png" alt="locked-msg">Criptografar</button>
+                    <button class="botao-2" type="button" id="descriptografar" onclick="descriptografarTexto()">
+                        <img class="img-unlocked" src="./src/imagens/unlocked.png"
+                            alt="unlocked-msg">Descriptografar</button>
+                </div>
+            </div>
+
+            <div class="container-03">
+                <div class="descrypt">
+                    <img class="img-lupa" src="./src/imagens/High_quality_products.png" alt="Imagem de saída de dados">
+                    <h1 id="info">Nenhuma mensagem encontrada!</h1>
+
+                    <label for="resultado_texto"></label>
+                    <textarea name="resultado_texto" id="resultado_texto" required readonly
+                        placeholder="Digite um texto que você deseja criptografar ou descriptografar."></textarea>
+
+                    <div id="mensagem"></div>
+                    <div id="copiar"></div>
+                </div>
+
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <div>
+            <a href="https://www.linkedin.com/in/fernando-s-santos-18345a67" target="_blank">
+                <img src="./src/imagens/linkedin_icon.jpg" class="LinkedIn" alt="Acesso ao meu perfil LinkedIn"></a>
+            <a href="https://github.com/Fernando-S-Santos" target="_blank">
+                <img src="./src/imagens/github_icon.jpg" class="GitHub" alt="Acesso ao meu perfil GitHub"></a>
+        </div>
+        <p class="copyright">&copy; Desenvolvido por Fernando S. Santos – 2022</p>
+    </footer>
+
+    <script src="./src/script.js"></script>
+</body>
+
+</html>

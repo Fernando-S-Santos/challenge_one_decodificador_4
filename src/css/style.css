@@ -1,0 +1,442 @@
+body {
+    background: black;
+    overflow-x: hidden;
+}
+
+.container-01,
+.container-02,
+.container-03 {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-logo img {
+    width: 70px;
+    height: 80px;
+    left: 30px;
+    top: 15px;
+}
+
+.icon-logo img {
+    align-items: flex-start;
+    margin: 0 15px 15px 10px;
+    gap: 40px;
+}
+
+.encrypt textarea {
+    position: absolute;
+    width: 570px;
+    height: 350px;
+    left: 120px;
+    top: 50px;
+    border: none;
+}
+
+textarea {
+    background: rgb(56, 53, 53);
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 25px;
+    resize: none;
+    outline: none;
+    color: white;
+}
+
+textarea::placeholder {
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 150%;
+    align-items: center;
+    vertical-align: top;
+    color: white;
+}
+
+textarea {
+    box-shadow: 0px 20px 32px -9px #17C3B2;
+    border-radius: 5px;
+}
+
+.msg-aviso {
+    position: absolute;
+    left: 120px;
+    top: 430px;
+}
+
+.msg-aviso {
+    font-size: 14px;
+    font-family: 'Inter';
+    font-weight: bold;
+    color: white;
+}
+
+.img-alert {
+    width: 17px;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+.buttons,
+.botao-3 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+}
+
+.buttons {
+    position: absolute;
+    left: 120px;
+    top: 470px;
+}
+
+.buttons button,
+.botao-3 {
+    box-shadow: 0px 24px 32px -8px #17C3B2;
+    border-radius: 10px;
+}
+
+.botao-1,
+.botao-2,
+.botao-3 {
+    padding: 0.8em 1.8em;
+    border: 2px solid #17C3B2;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #17C3B2;
+}
+
+.botao-1::before,
+.botao-2::before,
+.botao-3::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #17C3B2;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+.botao-1:hover::before,
+.botao-2:hover::before,
+.botao-3:hover::before {
+    width: 105%;
+}
+
+.botao-1:hover,
+.botao-2:hover,
+.botao-3:hover {
+    color: white;
+}
+
+.botao-3 {
+    left: 970px;
+    top: 420px;
+}
+
+.img-locked {
+    width: 17px;
+    height: 19px;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+.img-unlocked {
+    width: 17px;
+    height: 19px;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+.descrypt textarea {
+    position: absolute;
+    overflow: hidden;
+    width: 500px;
+    height: 390px;
+    left: 760px;
+    top: 50px;
+}
+
+.descrypt textarea {
+    font-size: 25px;
+    color: white;
+    border: none;
+}
+
+.img-lupa {
+    position: absolute;
+    display: block;
+    width: 200px;
+    right: 240px;
+    top: 90px;
+    z-index: 1;
+}
+
+#resultado_texto::placeholder {
+    width: 320px;
+    padding: 250px 90px 0 90px;
+}
+
+#resultado_texto::placeholder {
+    font-size: 18px;
+    text-align: center;
+}
+
+.LinkedIn {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 660px;
+    top: 550px;
+    margin: 0 10px 10px 0;
+}
+
+.GitHub {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 700px;
+    top: 550px;
+    margin: 0 10px 10px 0;
+}
+
+.copyright {
+    position: absolute;
+    padding: 24px;
+    margin: 10px;
+    left: 520px;
+    top: 560px;
+
+}
+
+.copyright {
+    font-size: 15px;
+    font-style: italic;
+    color: white;
+}
+
+
+/*Css responsivo - Tablet*/
+@media screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .container-01,
+    .container-02 {
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        display: inline-block
+    }
+
+    .container-03 {
+        width: auto;
+    }
+
+    .icon-logo {
+        margin: 20px 0 60px 10px;
+    }
+
+    .icon-logo {
+        width: 100%;
+    }
+
+    textarea::placeholder {
+        font-size: 18px;
+    }
+
+    .encrypt textarea {
+        width: 65%;
+        height: 280px;
+        top: 105px;
+    }
+
+    .descrypt textarea {
+        width: 65%;
+        height: 280px;
+        left: 120px;
+        top: 580px;
+    }
+
+    .img-lupa {
+        width: 20%;
+        right: 43%;
+        top: 640px;
+    }
+
+    #resultado_texto::placeholder {
+        padding: 210px 90px 0 90px;
+    }
+
+    #copiar {
+        align-items: center;
+        left: 320px;
+        top: 58rem;
+    }
+
+    .LinkedIn,
+    .GitHub {
+        position: absolute;
+        top: 64rem;
+    }
+
+    .LinkedIn {
+        left: 350px;
+    }
+
+    .GitHub {
+        left: 390px;
+    }
+
+    .copyright {
+        width: 50%;
+        text-align: center;
+        left: 150px;
+        top: 65rem;
+    }
+
+}
+
+/*Css responsivo - celular (smartphones)*/
+@media screen and (max-width: 375px) {
+    body {
+        flex-direction: column;
+    }
+
+    .container-01,
+    .container-02 {
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        display: inline-block
+    }
+
+    .container-03 {
+        width: auto;
+    }
+
+    .icon-logo {
+        margin: 10px 0 40px 0;
+    }
+
+    .icon-logo {
+        width: 30%;
+    }
+
+    textarea::placeholder {
+        font-size: 14px;
+    }
+
+    .encrypt textarea {
+        width: 80%;
+        height: 220px;
+        left: 60px;
+        top: 105px;
+    }
+
+    .msg-aviso {
+        font-size: 13px;
+        width: 70%;
+        left: 70px;
+        top: 350px;
+    }
+
+    .img-locked,
+    .img-unlocked {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        padding: 5px 5px 0 5px;
+        top: 0;
+        left: 0;
+
+    }
+
+    .buttons button {
+        left: -70px;
+        top: -70px;
+    }
+
+    .botao-1,
+    .botao-2 {
+        font-size: 12px;
+        width: 150px;
+        height: 30px;
+        padding: 5px 2px 5px 2px;
+    }
+
+    .descrypt textarea {
+        width: 80%;
+        height: 220px;
+        left: 60px;
+        top: 480px;
+    }
+
+    .img-lupa {
+        width: 25%;
+        right: 30%;
+        top: 520px;
+    }
+
+    #resultado_texto::placeholder {
+        font-size: 12px;
+        width: 155px;
+        height: 50px;
+        padding: 150px 2px 5px 80px;
+    }
+
+    #copiar {
+        width: 90px;
+        height: 30px;
+        left: 150px;
+        top: 45rem;
+    }
+
+    #copiar {
+        font-size: 12px;
+        align-items: center;
+        padding: 5px 2px 5px 20px;
+    }
+
+    .LinkedIn,
+    .GitHub {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 49rem;
+    }
+
+    .LinkedIn {
+        left: 190px;
+    }
+
+    .GitHub {
+        left: 220px;
+    }
+
+    .copyright {
+        width: 70%;
+        left: 60px;
+        top: 49rem;
+    }
+
+    .copyright {
+        font-size: 13px;
+    }
+}
