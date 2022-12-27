@@ -48,7 +48,7 @@ Alura+: Como um(a) desenvolvedor(a) front-end utiliza o Figma
 
 Meu aprendizado:
 
-Desafio Challenges como forma de praticar os conhecimentos estudados sobre a trilha de Programação Alura e Oracle One. Sendo uma boa forma de demonstrar os conhecimentos aprendidos, a criatividade e capacidade. Foi gratificante obter a autonomia de desenvolver o projeto da forma suas ideias e criatividade pode levar. É agregando no meu portfólio para oportunidades futuras.
+Desafio Challenges como forma de praticar os conhecimentos estudados sobre a trilha de Programação Alura e Oracle One. Sendo uma boa forma de demonstrar os conhecimentos aprendidos, a criatividade e capacidade. Foi gratificante obter a autonomia de desenvolver o projeto conforme as próprias ideias e criatividade. É agregando no meu portfólio para oportunidades futuras.
 
 Além disso, utilizei as ferramentas Trello, Figma e Discord.
 
